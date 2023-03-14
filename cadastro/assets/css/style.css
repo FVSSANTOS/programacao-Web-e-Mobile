@@ -94,10 +94,17 @@ body {
 }
 
 .finalize-buttom{
+    display: flex;
     width: 100%;
     border: none;
     background-color: #427EBB;
     align-items: center;
+}
+
+button{
+    border: none;
+    background-color: #427EBB;
+    
 }
 
 
