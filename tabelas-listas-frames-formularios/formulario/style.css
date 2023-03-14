@@ -20,3 +20,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
