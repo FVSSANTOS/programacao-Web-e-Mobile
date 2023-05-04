@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Flávio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="selecionar()">INICIO</a></li>
+                    <li><a href="#sobremim" onclick="selecionar()">SOBRE MIM</a></li>
+                    <li><a href="#skills" onclick="selecionar()">SKILLS</a></li>
+                    <li><a href="#curriculo" onclick="selecionar()">CURRICULO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/eu.jpg" alt="">
+            </div>
+            <h1>Flávio Vinícus</h1>
+            <h2>Desenvolvedor</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="sobremim" class="sobremim">
+        <div class="contenido-seccion">
+            <h2>Sobre mim</h2>
+            <p><span>Olá, sou Flávio Vinícius.</span> Sou estudante do 6º período do curso de Ciência da Computação na Universidade Católica de Pernambuco, com foco em desenvolvimento backend e na área de dados</p>
+
+            <div class="fila">
+                
+                <div class="col">
+                    <h3>Dados Pessoais</h3>
+                    <ul>
+                        <li>
+                            <strong>Telefone</strong>
+                            (81) 98412 - 4151
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            flaviovss@yahoo.com
+                        </li>
+                        <li>
+                            <strong>GitHub</strong>
+                            https://github.com/FVSSANTOS
+                        </li>
+                    </ul>
+                </div>
+
+              
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIVROS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <h3>Habilidades Profissionais</h3>
+                    <div class="skill"> 
+                        <span>Comunicação</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabalho em Equipe</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Criatividade</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicação</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="curriculo" class="curriculo">
+        <div class="contenido-seccion">
+            <h2>Curriculo</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educação</h3>
+                    <div class="item izq">
+                        <h4>Técnico em informática</h4>
+                        <span class="casa">Escola técnica LEIAUT</span>
+                        <span class="fecha">2017 - 2019</span>                       
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ciência da Computação</h4>
+                        <span class="casa">Universidade Católica de Pernambuco</span>
+                        <span class="fecha">2020 - Atualmente</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>                  
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiência profissional</h3>
+                    <div class="item der">
+                        <h4>Estágio - Estrutura de Rede</h4>
+                        <span class="casa">UNICAP</span>
+                        <span class="fecha">DEZ/2022 - Atualmente</span>
+                        <p>Assistência em problemas na rede dos usuários da universidade e auxilio na configuração de equipamentos na rede</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
